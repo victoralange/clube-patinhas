@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clube Patinhas</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+            
+            * {
+                font-family: 'DM Sans', sans-serif;
+            }
+
+            body {
+                margin: 0 !important;
+            }
+
+            #pagina {
+                background: white;
+                padding: 0 5%;
+                margin-top: 15px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                width: 75%;
+            }
+
+            #fundo {
+                background: linear-gradient(rgba(155, 187, 250, 0.75), rgba(105, 141, 211, 0.75)), url('https://img.magnific.com/vetores-gratis/padrao-de-pegada-de-gato-ou-cao-em-fundo-branco_1017-58411.jpg?semt=ais_hybrid&w=740&q=80');
+                overflow: auto;
+            }
+
+            #fundo, #pagina {
+                min-height: 100vh;
+            }
+
+            #header { 
+                background: linear-gradient(rgba(155, 187, 250, 0.95), rgba(105, 141, 211, 0.95));
+                text-align: center;
+                color: #082358bf;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+                font-size: 15px;
+                opacity: 1;
+                line-height: 30px;
+                padding: 10px;
+            }
+
+            #header h1 {
+                padding-top: 5px;
+                margin: 0;
+            }
+
+            #imagens {
+                width: 100%;
+                display: flex;
+                padding-bottom: 15px;
+                gap: 5px;
+            }
+
+            #imagens .imagem {
+                max-height: 250px;
+                width: 100%;
+                display: grid;
+            }
+
+            .imagem img {
+                width: 100%;
+                max-height: 200px;
+                object-fit: cover;
+                object-position: 50% 25%;
+                border-radius: 10px 10px 0 0;
+            }
+
+            .imagem label{
+                text-align: center;
+                padding: 5px;
+                background: #dddddd;
+                color: #656565;
+            }
+
+            #conteudo {
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="fundo">
+            <div id="header">
+                <h1>Clube Patinhas</h1>
+                <label>TUDO SOBRE CACHORRINHOS</label>
+            </div>
+            
+            <div id="conteudo">
+                <div id="pagina" style="padding-top: 15px;">
+                    <h2>Como cuidar</h2>
+                    <p>Um cachorro saudável precisa de comida certa, água fresca, passeios e carinho. Filhotes só passeiam <b>com as vacinas em dia</b>.</p>
+
+                    <h3>Alimentação</h3>
+                    <p>Ofereça ração adequada à idade e ao porte do cão e deixe sempre água limpa à disposição.</p>
+                    <ul>
+                        <li>Filhotes comem várias vezes ao dia, em porções pequenas.</li>
+                        <li>Adultos costumam comer duas vezes ao dia.</li>
+                        <li>Alguns alimentos humanos fazem mal aos cães:</li>
+                        <ul>
+                            <li>chocolate;</li>
+                            <li>uva e uva-passa;</li>
+                            <li>cebola e alho.</li>
+                        </ul>
+                        <li>Em caso de dúvida, consulte um veterinário.</li>
+                    </ul>
+
+                    <h3>Passeios</h3>
+                    <p>Passear gasta energia, fortalece os músculos e ajuda o cão a conviver com outras pessoas e animais.</p>
+                    <ol>
+                        <li>Pegar a guia</li>
+                        <li>Passar, e de preferência, fora dos horários mais quentes para o asfalto para o asfalto não queimar as patas.</li>
+                        <li>Recolher as fezzes com um saquinho.</li>
+                        <li>Dar água ao voltar para casa.</li>
+                    </ol>
+                    <p>Escove os dentes <i>só com pasta para cães</i>: a pasta de dente de humans pode fazer mal a eles.</p>
+
+                    <h2>Raças</h2>
+                    <p>Cada raça tem um porte e um jeito. Algumas das mais queridas pelos sócios do clube:</p>
+                    <ul>
+                        <li>Vira-lata caramelo</li>
+                        <li>Labrador</li>
+                        <li>Pinscher</li>
+                    </ul>
+
+                    <div id="imagens">
+                        <div class="imagem">
+                            <img src="img/vira-lata.webp" alt="Vira-lata" width="300">
+                            <label><i>Vira-lata</i></label>
+                        </div>
+                        <div class="imagem">
+                            <img src="img/labrador.webp" alt="Vira-lata" width="300">
+                            <label><i>Labrador</i></label>
+                        </div>
+                        <div class="imagem">
+                            <img src="img/pinscher.webp" alt="Vira-lata" width="300">
+                            <label><i>Pinscher</i></label>
+                        </div>
+                    </div>
+
+                    <h2>Dicas para cuidar do seu cachorro</h2>
+                    <p>Veja algumas dicas importantes:</p>
+
+                    <ol>
+                        <li>Ofereça uma alimentação adequada.</li>
+                        <li>Matenha a vacinação em dia.</li>
+                        <li>Leve o cachorro para passar.</li>
+                        <li>Disponibilize água limpa.</li>
+                        <li>Visite o veterinário regularmente.</li>
+                    </ol>
+
+                    <h2>Saiba mais</h2>
+                    <p>Quer aprender mais sobre cachorros? <a href="https://pt.wikipedia.org/wiki/C%C3%A3o" target="_blank">Clique aqui para saber mais sobre cachorros</a></p>
+                    
+                    <h2>Contato</h2>
+                    <p>Clube Patinhas - Joinville, SC</p>
+                    <p>E-mail: <a href="mailto: contato@clubepatinhas.com">
+                        contato@clubepatinhas.com.br
+                    </a></p>
+                    <p>Site desenvolvido para fins educativos.</p>
+                    <br><br>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </body>
+</html>
